@@ -1,6 +1,7 @@
 body {
     padding-top: 70px;
     background: #000;
+
 }
 
 .clear {
@@ -21,6 +22,7 @@ body {
     margin-top: 15px;
 }
 
+
 #companyName {
     font-size: 1.3em;
     font-weight: bold;
@@ -35,7 +37,7 @@ video {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -12;
+    z-index: -20;
     transform: translateX(-50%) translateY(-50%);
     background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
     background-size: cover;
@@ -43,6 +45,7 @@ video {
 }
 
 #reservationModal {
+
 }
 
 
@@ -106,6 +109,7 @@ video {
     margin-top: 200px;
     padding-bottom: 15px;
     width: 100%;
+
 }
 
 #serviceInfoAbout {
@@ -132,6 +136,7 @@ video {
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: white;
+
 }
 
 .cleanComf {

@@ -45,7 +45,7 @@
                     <li class = "hidden-xs"><a href = "#testimonialPage">Testimonials</a></li>
                     <li><a href = "#contactPage">Contact</a></li>
                     <li>
-                        <button type="button" class="btn btn-danger center-block btn-xs" data-toggle = "modal" data-target="#reservationModal" id = "reservationBtn">
+                        <button type="button" class="btn btn-danger btn-sm" data-toggle = "modal" data-target="#reservationModal" id = "reservationBtn">
                             Online Reservation
                         </button>
                     </li>
@@ -53,23 +53,6 @@
                 </ul>
             </div>
         </nav>
-        <div class = "modal" tabindex="-1" role="dialog" id="reservationModal">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                    <div class = "modal-header">
-                        <button class = "close" data-dismiss = "modal">x</button>
-                        <h4 class = "modal-title">Online Reservation</h4>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-success">Submit Reservation</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 
@@ -79,6 +62,10 @@
     <div class = "clear"></div>
 
     <!-- homepage text -->
+    <div class="container-fluid">
+
+    </div>
+
     <section class = "bg-1 text-center">
         <div class = "text-right text- text-uppercase homePageText">
             <p><span class = "ride">Ride with us</span></p>
@@ -198,7 +185,7 @@
             <div class = "row">
                 <div class="col-md-3">
                     <h2> Sean Memen</h2>
-                    <p>"This nigga be talking about uber and farrari and shit!"</p>
+                    <p>"Picked up from the airport and driver was very friendly to deal with"</p>
 
                 </div>
                 <div class="col-md-3">
@@ -265,6 +252,87 @@
                 </div>
             </div>
         </div>
+
+    <div class = "modal fade " role="dialog" tabindex="-1" id="reservationModal" >
+        <div class = "modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <button class = "close" data-dismiss = "modal">x</button>
+                    <h3 class = "modal-title">Online Reservation</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row container-fluid">
+                        <div class = "col-lg-8">
+                            <div class="form-horizontal" method = "post">
+                                <div class="form-group">
+                                    <label for="firstNme">First Name:</label>
+                                    <input type="text" class="form-control" id="firstNme">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="email" class="form-control" id="lastName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phoneNumber">Contact Number:</label>
+                                    <input type="number" class="form-control" id="phoneNumber">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reservationEmail">Email Address:</label>
+                                    <input type="email" class="form-control" id="reservationEmail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="calendar">Pick up Date:</label>
+                                    <input type="date" class="form-control" id="calendar">
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Pick up Time:</label>
+                                    <input type="time" class="form-control" id="time">
+                                </div>
+                                <div class="form-group">
+                                    <div class = "radio-inline">
+                                        <label>
+                                        <input type="radio" name = "departureArrival" id = "departure" value="option1">
+                                            Departure
+                                        </label>
+                                    </div>
+                                    <div class = "radio-inline">
+                                        <label>
+                                            <input type="radio" name = "departureArrival" id = "arriving" value="option2">
+                                            Arrival
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Address:</label>
+                                    <input type="text" class="form-control" id="address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">City:</label>
+                                    <input type="text" class="form-control" id="city">
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State:</label>
+                                    <input type="text" class="form-control" id="state">
+                                </div>
+                                <div class="form-group">
+                                    <label for="airline">Airline:</label>
+                                    <input type="text" class="form-control" id="airline">
+                                </div>
+                                <div class="form-group">
+                                    <label for="flightNumber">Flight Number:</label>
+                                    <input type="text" class="form-control" id="flightNumber">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Submit Reservation</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
