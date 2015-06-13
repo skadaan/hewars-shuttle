@@ -19,7 +19,7 @@ body {
 
 #reservationBtn {
     position: relative;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 
@@ -44,7 +44,9 @@ video {
     transition: 1s opacity;
 }
 
-#reservationModal {
+#firstName, #lastName, #phoneNumber, #reservationEmail, #calendar, #time, #address, #city, #state, #airline, #flightNumber, #fname, #email, #phone, #message{
+    border: 0;
+    background-color: #d5d5d5;
 
 }
 
