@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/stylePage.css" rel="stylesheet">
     <script src="js/parallax.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,6 +20,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/stylePage.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <?php include 'php/contact.php';?>
     <![endif]-->
 </head>
 <body data-spy = "scroll" data-target=".navbar-collapse">
@@ -55,10 +58,6 @@
         </nav>
     </div>
 
-
-
-
-
     <div class = "clear"></div>
 
     <!-- homepage text -->
@@ -71,7 +70,9 @@
             <p><span class = "ride">Ride with us</span></p>
             <p>& experience the beauty of</p>
             <p><span class = "ride">Portland</span> and its suburbs</p>
+
         </div>
+
 
     <div class = "container-fluid">
 
@@ -79,8 +80,8 @@
         <div class = "videoBackground" id="imageParallax">
             <video autoplay  poster="http://holykaw.alltop.com/wp-content/uploads/2013/03/Fotolia_40759988_Subscription_L.jpg" id="bgvid" loop muted="muted">
                 <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-                <source src="media/stockVideo.mp4" type="video/webm">
-                <source src="media/stockVideo.webm" type="video/mp4">
+                <source class = "hidden-sm" src="media/stockVideo.mp4" type="video/webm">
+                <source class = "hidden-sm" src="media/stockVideo.webm" type="video/mp4">
             </video>
         </div>
     </div>
@@ -92,7 +93,7 @@
 
         <div class = "jumbatron">
             <div id = "serviceSummary">
-                <h1 id ="serviceInfoAbout">Our Service</h1>
+                <h2 id ="serviceInfoAbout">Our Service</h2>
 
                 <p class = "lead">We guarantee a smooth and comfortable ride with our friendly licensed driver</p>
             </div>
@@ -124,13 +125,13 @@
     </div>
 
     <!-- rates page -->
-    <div class = "container-fluid center-block imageContent" id = "ratesPage">
+    <div class = "container-fluid center-block" id = "ratesPage">
 
         <div class = "row">
             <div class="col-sm-4 lead">
-                <h1 class = "text-center">Low Prices.</h1>
-                <h1 class = "text-center">Guaranteed.</h1>
-                <p class = "lead text-center jumbotron">We guarantee to have the lowest prices or we price-match.</p>
+                <h2 class = "text-center">Low Prices.</h2>
+                <h2 class = "text-center">Guaranteed.</h2>
+                <p class = "text-center jumbotron">We guarantee to have the lowest prices or we price-match.</p>
 
             </div>
             <div class = "col-sm-8">
@@ -179,89 +180,91 @@
         <p class = "text-center cleanComf lead">Clean & Comfortable</p>
     </div>
 
-    <div class = "container-fluid" id = "testimonialPage">
-        <div class = "jumbotron text-center">
-            <h1 class = "testimonialHeader">Testimonials</h1>
-            <div class = "row">
-                <div class="col-md-3">
-                    <h2> Sean Memen</h2>
+    <!-- TESTIMONIAL PAGE -->
+    <div class = "container-fluid testimonialPage row" id = "testimonialPage">
+        <div class = "container">
+
+        <div class = "text-center">
+            <div class = "container">
+                <h2 class = "testimonialHeader">Testimonials</h2>
+            </div>
+            <div class = "row contactUsSection">
+                <div class="col-sm-3">
+                    <h3> Sean Memen</h3>
                     <p>"Picked up from the airport and driver was very friendly to deal with"</p>
 
                 </div>
-                <div class="col-md-3">
-                    <h2> Saleh Qadan</h2>
+                <div class="col-sm-3">
+                    <h3> Saleh Qadan</h3>
                     <p>"I really enjoyed talking to the driver"</p>
                 </div>
-                <div class="col-md-3">
-                    <h2> Marqus White</h2>
+                <div class="col-sm-3">
+                    <h3> Marqus White</h3>
                     <p>"Enjoyed the ride! I will be using them again when I come back to town"</p>
                 </div>
-                <div class="col-md-3">
-                    <h2> Qadan</h2>
+                <div class="col-sm-3">
+                    <h3> Qadan</h3>
                     <p>"Great service!"</p>
                 </div>
             </div>
         </div>
-
+        </div>
     </div>
 
-    <div class = "container-fluid" id = "contactPage">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg">
-                        <form class="form-horizontal" method="post">
+    <!-- CONTACT US PAGE -->
+    <div class = "container-fluid"  id = "contactPage">
+        <div class = "container">
 
-                                <legend class="text-center header">Contact us</legend>
-
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-1 text-center"><i class="g glyphicon glyphicon-user bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="fname" name="name" type="text" placeholder="Name" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-1 text-center"><i class="glyphicon glyphicon-envelope bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-1 text-center"><i class="glyphicon glyphicon-earphone bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-1 text-center"><i class="glyphicon glyphicon-italic bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                    </div>
-                                </div>
-
-                        </form>
-                    </div>
+            <div class = "text-center">
+                <div class = "container">
+                    <h2 class = "text-center">Contact Us</h2>
                 </div>
             </div>
+
         </div>
 
+
+        <div class="row">
+
+
+        <div class="col-md-12 contact-form">
+            <form id="contact" method="post" class="form" role="form" >
+
+                <div class="row" action="php/contact.php">
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name*" type="text" required/>
+                    </div>
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email" required />
+                    </div>
+                </div>
+                <textarea class="form-control" id="message" name="message" placeholder="Message*" rows="8"  required>
+                </textarea>
+                <br />
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 form-group">
+                        <button class="btn btn-success pull-right" type="submit" id = "contactSubmit" value="Send" >Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+            <img id = "bottomImg" src="media/bottomImg.png" />
+        </div>
+    </div>
+
+
+
+
+            <!--- RESERVATION FORM --->
     <div class = "modal fade " role="dialog" tabindex="-1" id="reservationModal" >
         <div class = "modal-dialog">
             <div class = "modal-content">
                 <div class = "modal-header">
-                    <button class = "close" data-dismiss = "modal">x</button>
+                    <button class = "close" data-dismiss = "modal"><span class = "glyphicon glyphicon-remove-circle" id = "xBtn"></span> </button>
                     <h3 class = "modal-title">Online Reservation</h3>
                 </div>
                 <div class="modal-body">
-                    <div class="row container-fluid">
+                    <div class="row container-fluid col-md-offset-1">
                         <div class = "col-lg-8" id = "saf">
                             <div class="form-horizontal" method = "post">
                                 <div class="form-group">
