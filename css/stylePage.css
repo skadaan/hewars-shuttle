@@ -128,7 +128,7 @@ video {
 
 #serviceInfoAbout {
 
-    color: #222222;
+    color: #494949;
 }
 
 #serviceSummary {
@@ -140,6 +140,11 @@ video {
 #serviceInfo {
     padding-top: 25px;
     font-size: 5.5em;
+}
+
+#service_summary {
+    
+    color: #494949; !
 }
 
 #servicePage p {

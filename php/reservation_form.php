@@ -35,7 +35,7 @@ $airline            = $_POST['airline'];
 $flightNumber       = $_POST['flightNumber'];
 
 // Create the email and send the message
-$to = 'salehq1989@gmail.com';
+$to = 'contact@newstarairporter.com';
 $email_subject = "Website Reservation Form. Customer Name:  $firstName";
 $email_body = "You have received a new Reservation from your website.\n\n"."Here are the details:\n\nName: $firstName $lastName\n\nEmail: $email_address\n\nPhone: $phoneNumber\n\nReservation Date: $calendar\n\nReservation Time: $time\n\nDeparting or Arriving: $departure $arriving\n\nAddress: $address $city #State\n\nAirline: $airline\n\nFlight Number: $flightNumber";
 $headers = "From: $email_address\n";
