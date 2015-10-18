@@ -163,6 +163,12 @@ video {
     border-top: 1px solid #c9c9c9;
 }
 
+#accepted_card_img {
+ position: center;
+ margin: auto;
+ vertical-align: center;
+}
+
 
 
 .cleanComf {
@@ -302,4 +308,8 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+#contact_text_info {
+    color: #EFEFEF;
 }
